@@ -17,9 +17,12 @@ public class ExceptionHandling {
 
             System.out.println("Result: " + result);
         }
-        
+
         catch (ArithmeticException e) {
             System.out.println("Error: Cannot divide by zero!");
+        }
+        catch (java.util.InputMismatchException e) {
+            System.out.println("Error: Please enter valid numbers!");
         }
     }
 }
