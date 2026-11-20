@@ -24,5 +24,10 @@ public class ExceptionHandling {
         catch (java.util.InputMismatchException e) {
             System.out.println("Error: Please enter valid numbers!");
         }
+
+        finally {
+            System.out.println("Exception handling completed.");
+            input.close();
+        }
     }
 }
